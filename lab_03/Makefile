@@ -1,3 +1,5 @@
+all : task1.out task2.out stack.out queue.out task3.out task4.out task5.out
+
 task1.out : task1.c
 	gcc -o $@ $?
 

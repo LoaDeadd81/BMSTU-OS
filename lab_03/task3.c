@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 #include <wait.h>
 #include <errno.h>
@@ -7,40 +6,48 @@
 
 int main()
 {
-    int pid;
-    const char path[2][100] = {"/home/loadeadd/Рабочий стол/study/BMSTU-OS/lab_03/stack.out", "/home/loadeadd/Рабочий стол/study/BMSTU-OS/lab_03/queue.out"};
-
-    printf("Parent: pid=%d, gid=%d\n", getpid(), getpgrp());
+    pid_t childpid[2], ended_child;
+    const char path[2][100] = {"/home/loadeadd/Рабочий стол/study/BMSTU-OS/lab_03/stack.out",
+                               "/home/loadeadd/Рабочий стол/study/BMSTU-OS/lab_03/queue.out"};
+    int exec_status, wait_status;
 
     for (size_t i = 0; i < 2; ++i)
     {
-        pid = fork();
-        if (pid == -1)
-            perror("Can’t fork\n");
-        else if (pid == 0)
+        childpid[i] = fork();
+        if (childpid[i] == -1)
         {
-            printf("Child : pid=%d, gid=%d, ppid=%d\n", getpid(), getpgrp(), getppid());
-            int status = execl(path[i], 0);
-            if(status == -1)
+            perror("Can’t fork\n");
+            return 1;
+        }
+        else if (childpid[i] == 0)
+        {
+            printf("Child : pid=%d, gpid=%d, ppid=%d\n", getpid(), getpgrp(), getppid());
+            exec_status = execl(path[i], 0);
+            if (exec_status == -1)
             {
                 printf("Can't exec\n%s : %s\n", path[i], strerror(errno));
                 return 1;
             }
-            else
-                return 0;
+//            else
+//                return 0;
         }
+        else printf("Parent: pid=%d, gpid=%d, child pid=%d\n", getpid(), getpgrp(), childpid[i]);
     }
 
     for (int i = 0; i < 2; ++i)
     {
-        pid_t exit_child;
-        int status;
-        exit_child = wait(&status);
-        printf("Child finished: cpid=%d\n", exit_child);
-        if (WIFEXITED(status))
-            printf("Child exited with code %d\n", WEXITSTATUS(status));
-        else
-            printf("Child terminated abnormal\n");
+        ended_child = wait(&wait_status);
+
+        if (ended_child == -1)
+            printf("Wait error: %s\n", strerror(errno));
+
+        printf("Child finished: pid=%d\n", ended_child);
+        if (WIFEXITED(wait_status))
+            printf("Child exited with code %d\n", WEXITSTATUS(wait_status));
+        else if (WIFSIGNALED(wait_status))
+            printf("Child process terminated by non-intercepted interrupt\nSignal number: %d\n", WTERMSIG(wait_status));
+        else if (WIFSTOPPED(wait_status))
+            printf("Child process has stopped\nSignal number: %d\n", WSTOPSIG(wait_status));
     }
 
     return 0;
