@@ -11,7 +11,7 @@ void handler(int sig_numb)
 
 int main()
 {
-    signal(SIGINT, SIG_IGN);
+    signal(SIGINT, handler);
     pid_t childpid[2], ended_child;
     int fd[2], wait_status;
     char mes[2][20] = {"message", "another message"};
@@ -44,7 +44,6 @@ int main()
         }
         else printf("Parent: pid=%d, gpid=%d, child pid=%d\n", getpid(), getpgrp(), childpid[i]);
     }
-
 
     for (int i = 0; i < 2; ++i)
     {
