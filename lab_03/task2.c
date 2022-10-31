@@ -7,7 +7,7 @@
 
 int main(void)
 {
-    pid_t childpid[2], ended_child;
+    pid_t childpid[2];
     int wait_status;
 
     for (size_t i = 0; i < 2; ++i)
@@ -28,12 +28,15 @@ int main(void)
 
     for (int i = 0; i < 2; ++i)
     {
-        ended_child = wait(&wait_status);
+        childpid[i] = waitpid(childpid[i], &wait_status, 0);
 
-        if (ended_child == -1)
+        if (childpid[i] == -1)
+        {
             printf("Wait error: %s\n", strerror(errno));
+            return 1;
+        }
 
-        printf("Child finished: pid=%d\n", ended_child);
+        printf("Child finished: pid=%d\n", childpid[i]);
         if (WIFEXITED(wait_status))
             printf("Child exited with code %d\n", WEXITSTATUS(wait_status));
         else if (WIFSIGNALED(wait_status))

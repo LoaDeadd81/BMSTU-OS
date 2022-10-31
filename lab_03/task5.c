@@ -6,15 +6,23 @@
 
 int flag = 0;
 
-void handler(int sig_numb)
-{ flag = 1; }
+void sig_handler(int sig_numb)
+{
+    printf("Signal num: %d\n", sig_numb);
+    flag = 1;
+}
 
 int main()
 {
-    signal(SIGINT, handler);
-    pid_t childpid[2], ended_child;
+    if (signal(SIGINT, sig_handler) == -1)
+    {
+        printf("Signal error\n");
+        return 1;
+    }
+
+    pid_t childpid[2];
     int fd[2], wait_status;
-    char mes[2][20] = {"message", "another message"};
+    char mes[2][50] = {"message", "another long message"};
 
     if (pipe(fd) == -1)
     {
@@ -32,8 +40,14 @@ int main()
         }
         else if (childpid[i] == 0)
         {
-            signal(SIGINT, handler);
+            if (signal(SIGINT, sig_handler) == -1)
+            {
+                printf("Signal error\n");
+                return 1;
+            }
+
             sleep(2);
+
             if (flag)
             {
                 close(fd[0]);
@@ -45,24 +59,33 @@ int main()
         else printf("Parent: pid=%d, gpid=%d, child pid=%d\n", getpid(), getpgrp(), childpid[i]);
     }
 
+    sleep(2);
+
     for (int i = 0; i < 2; ++i)
     {
         if (flag)
         {
+            strcpy(mes[i], "");
             close(fd[1]);
             int rc = read(fd[0], mes[i], sizeof(mes[i]));
             if (rc == -1)
+            {
                 printf("Read error: %s\n", strerror(errno));
-            else
-                printf("Message%d: %s\n", i + 1, mes[i]);
+                return 1;
+            }
+            printf("Message%d: %s\n", i + 1, mes[i]);
         }
 
-        ended_child = wait(&wait_status);
+        childpid[i] = waitpid(childpid[i], &wait_status, 0);
 
-        if (ended_child == -1)
+        if (childpid[i] == -1)
+        {
             printf("Wait error: %s\n", strerror(errno));
+            return 1;
+        }
 
-        printf("Child finished: pid=%d\n", ended_child);
+        printf("Child finished: pid=%d\n", childpid[i]);
+
         if (WIFEXITED(wait_status))
             printf("Child exited with code %d\n", WEXITSTATUS(wait_status));
         else if (WIFSIGNALED(wait_status))

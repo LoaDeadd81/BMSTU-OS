@@ -6,7 +6,7 @@
 
 int main()
 {
-    pid_t childpid[2], ended_child;
+    pid_t childpid[2];
     const char path[2][100] = {"/home/loadeadd/Рабочий стол/study/BMSTU-OS/lab_03/stack.out",
                                "/home/loadeadd/Рабочий стол/study/BMSTU-OS/lab_03/queue.out"};
     int exec_status, wait_status;
@@ -28,20 +28,21 @@ int main()
                 printf("Can't exec\n%s : %s\n", path[i], strerror(errno));
                 return 1;
             }
-//            else
-//                return 0;
         }
         else printf("Parent: pid=%d, gpid=%d, child pid=%d\n", getpid(), getpgrp(), childpid[i]);
     }
 
     for (int i = 0; i < 2; ++i)
     {
-        ended_child = wait(&wait_status);
+        childpid[i] = waitpid(childpid[i], &wait_status, 0);
 
-        if (ended_child == -1)
+        if (childpid[i] == -1)
+        {
             printf("Wait error: %s\n", strerror(errno));
+            return 1;
+        }
 
-        printf("Child finished: pid=%d\n", ended_child);
+        printf("Child finished: pid=%d\n", childpid[i]);
         if (WIFEXITED(wait_status))
             printf("Child exited with code %d\n", WEXITSTATUS(wait_status));
         else if (WIFSIGNALED(wait_status))

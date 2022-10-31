@@ -6,9 +6,9 @@
 
 int main()
 {
-    pid_t childpid[2], ended_child;
+    pid_t childpid[2];
     int fd[2], wait_status;
-    char mes[2][20] = {"message", "another message"};
+    char mes[2][20] = {"message", "another long message"};
 
     if (pipe(fd) == -1)
     {
@@ -39,16 +39,23 @@ int main()
         close(fd[1]);
         int rc = read(fd[0], mes[i], sizeof(mes[i]));
         if (rc == -1)
+        {
             printf("Read error: %s\n", strerror(errno));
-        else
-            printf("Message%d: %s\n", i + 1, mes[i]);
+            return 1;
+        }
 
-        ended_child = wait(&wait_status);
+        printf("Message%d: %s\n", i + 1, mes[i]);
 
-        if (ended_child == -1)
+        childpid[i] = waitpid(childpid[i], &wait_status, 0);
+
+        if (childpid[i] == -1)
+        {
             printf("Wait error: %s\n", strerror(errno));
+            return 1;
+        }
 
-        printf("Child finished: pid=%d\n", ended_child);
+        printf("Child finished: pid=%d\n", childpid[i]);
+
         if (WIFEXITED(wait_status))
             printf("Child exited with code %d\n", WEXITSTATUS(wait_status));
         else if (WIFSIGNALED(wait_status))
