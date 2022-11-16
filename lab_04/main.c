@@ -12,7 +12,7 @@
 #include <time.h>
 #include <pthread.h>
 
-#define LOCKFILE "/var/run/daemon.pid"
+#define LOCKFILE "/var/run/daemonos .pid"
 #define LOCKMODE (S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH)
 
 // journalctl | grep daemonos
@@ -27,7 +27,7 @@ int lockfile(int fd)
     fl.l_start = 0;
     fl.l_whence = SEEK_SET;
     fl.l_len = 0;
-    return(fcntl(fd, F_SETLK, &fl));
+    return (fcntl(fd, F_SETLK, &fl));
 }
 
 int already_running(void)
@@ -35,17 +35,20 @@ int already_running(void)
     int fd;
     char buf[16];
 
-    fd = open(LOCKFILE, O_RDWR|O_CREAT, LOCKMODE);
-    if (fd < 0) {
+    fd = open(LOCKFILE, O_RDWR | O_CREAT, LOCKMODE);
+    if (fd < 0)
+    {
         syslog(LOG_ERR, "unable to open %s: %s",
                LOCKFILE, strerror(errno));
         exit(1);
     }
 
-    if (lockfile(fd) < 0) {
-        if (errno == EACCES || errno == EAGAIN) {
+    if (lockfile(fd) < 0)
+    {
+        if (errno == EACCES || errno == EAGAIN)
+        {
             close(fd);
-            return(1);
+            return (1);
         }
         syslog(LOG_ERR, "it is not possible to set a lock on %s: %s",
                LOCKFILE, strerror(errno));
@@ -53,10 +56,11 @@ int already_running(void)
     }
 
     ftruncate(fd, 0);
-    sprintf(buf, "%ld", (long)getpid());
-    write(fd, buf, strlen(buf)+1);
-    return(0);
+    sprintf(buf, "%ld", (long) getpid());
+    write(fd, buf, strlen(buf) + 1);
+    return (0);
 }
+
 
 void daemonize(const char *cmd)
 {
@@ -102,7 +106,7 @@ void daemonize(const char *cmd)
     openlog(cmd, LOG_CONS, LOG_DAEMON);
     if (fd0 != 0 || fd1 != 1 || fd2 != 2)
     {
-        syslog(LOG_ERR, "erroneous file descriptors %d %d %d",fd0, fd1, fd2);
+        syslog(LOG_ERR, "erroneous file descriptors %d %d %d", fd0, fd1, fd2);
         exit(1);
     }
 }
@@ -111,13 +115,16 @@ void *thr_fn(void *arg)
 {
     int err, signo;
 
-    for (;;) {
+    for (;;)
+    {
         err = sigwait(&mask, &signo);
-        if (err != 0) {
+        if (err != 0)
+        {
             syslog(LOG_ERR, "function call error sigwait");
             exit(1);
         }
-        switch (signo) {
+        switch (signo)
+        {
             case SIGHUP:
                 syslog(LOG_INFO, "reading the configuration file");
                 break;
@@ -146,7 +153,8 @@ int main(int argc, char *argv[])
 
     daemonize(cmd);
 
-    if (already_running()) {
+    if (already_running())
+    {
         syslog(LOG_ERR, "%s: the daemon is already running", cmd);
         exit(1);
     }
@@ -155,23 +163,27 @@ int main(int argc, char *argv[])
     sigemptyset(&sa.sa_mask);
     sa.sa_flags = 0;
 
-    if (sigaction(SIGHUP, &sa, NULL) == -1) {
+    if (sigaction(SIGHUP, &sa, NULL) == -1)
+    {
         syslog(LOG_ERR, "the action cannot be restored SIG_DFL for SIGHUP");
         exit(1);
     }
     sigfillset(&mask);
-    if ((err = pthread_sigmask(SIG_BLOCK, &mask, NULL)) != 0) {
+    if ((err = pthread_sigmask(SIG_BLOCK, &mask, NULL)) != 0)
+    {
         syslog(LOG_ERR, "operation execution error SIG_BLOCK");
         exit(1);
     }
 
     err = pthread_create(&tid, NULL, thr_fn, 0);
-    if (err != 0) {
+    if (err != 0)
+    {
         syslog(LOG_ERR, "unable to create a stream");
         exit(1);
     }
 
-    while (1) {
+    while (1)
+    {
         t = time(NULL);
         struct tm tm = *localtime(&t);
         syslog(LOG_INFO, "%s: Current time is: %02d:%02d:%02d\n",
