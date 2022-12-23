@@ -37,14 +37,14 @@ int main()
     if (semctl(s_id, ACTIVE_READERS, SETVAL, 0) == -1 ||
         semctl(s_id, CAN_WRITE, SETVAL, 0) == -1 ||
         semctl(s_id, WAITING_WRITERS, SETVAL, 0) == -1 ||
-        semctl(s_id, CAN_READ, SETVAL, 0) == -1 ||
+        semctl(s_id, WAITING_READERS, SETVAL, 0) == -1 ||
         semctl(s_id, BIN_SEM, SETVAL, 1) == -1)
     {
         perror("ssemctl error");
         exit(1);
     }
 
-    for (size_t i = 0; i < N_WRITERS; ++i)
+    for (size_t i = 0; i < WRITERS_NUM; ++i)
     {
         int child_pid = fork();
         if (child_pid == -1)
@@ -54,12 +54,18 @@ int main()
         }
         else if (child_pid == 0)
         {
-            writer_run(shared_mem, s_id, i);
+            int *writer_mem = shmat(fd, 0, 0);
+            writer_run(writer_mem, s_id, i);
+            if (shmdt(writer_mem) == -1)
+            {
+                perror("shmdt error");
+                exit(1);
+            }
             exit(0);
         }
     }
 
-    for (size_t i = 0; i < N_READERS; i++)
+    for (size_t i = 0; i < READERS_NUM; i++)
     {
         int child_pid = fork();
         if (child_pid == -1)
@@ -69,33 +75,41 @@ int main()
         }
         else if (child_pid == 0)
         {
-            reader_run(shared_mem, s_id, i);
+            int *reader_mem = shmat(fd, 0, 0);
+            reader_run(reader_mem, s_id, i);
+            if (shmdt(reader_mem) == -1)
+            {
+                perror("shmdt error");
+                exit(1);
+            }
             exit(0);
         }
     }
 
-    for (size_t i = 0; i < N_WRITERS + N_READERS; i++)
+    reader_run(shared_mem, s_id, READERS_NUM);
+
+    for (size_t i = 0; i < WRITERS_NUM + READERS_NUM; i++)
     {
-        int ch_status;
-        int child_pid = wait(&ch_status);
+        int child_status;
+        int child_pid = wait(&child_status);
 
         if (child_pid == -1)
         {
             perror("wait error");
             exit(1);
         }
-        if (!WIFEXITED(ch_status))
+        if (!WIFEXITED(child_status))
             fprintf(stderr, "Child process %d terminated abnormally", child_pid);
-        if (shmdt(shared_mem) == -1)
-        {
-            perror("shmdt error");
-            exit(1);
-        }
+//        if (shmdt(shared_mem) == -1)
+//        {
+//            perror("shmdt error");
+//            exit(1);
+//        }
     }
 
-    struct shmid_ds shm;
-    shmctl(fd, IPC_STAT, &shm);
-    printf("\n\n\n\n%d\n\n", shm.shm_nattch);
+//    struct shmid_ds shm;
+//    shmctl(fd, IPC_STAT, &shm);
+//    printf("\n\n\n\n%d\n\n", shm.shm_nattch);
 
     if (shmdt(shared_mem) == -1)
     {

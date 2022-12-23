@@ -10,14 +10,14 @@
 #include <sys/stat.h>
 #include <time.h>
 
-#define N 1
+#define N 3
 
-#define N_READERS 4
-#define N_WRITERS 3
+#define READERS_NUM 4
+#define WRITERS_NUM 3
 
 #define ACTIVE_READERS 0
 #define CAN_WRITE 1
-#define CAN_READ 2
+#define WAITING_READERS 2
 #define WAITING_WRITERS 3
 #define BIN_SEM 4
 
