@@ -36,6 +36,8 @@ extern  struct BAKERY * bakery_res_1(struct BAKERY *, CLIENT *);
 extern  struct BAKERY * bakery_res_1_svc(struct BAKERY *, struct svc_req *);
 extern int bakery_prog_1_freeresult (SVCXPRT *, xdrproc_t, caddr_t);
 
+
+
 #else /* K&R C */
 #define GET_NUMBER 1
 extern  struct BAKERY * get_number_1();
