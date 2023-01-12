@@ -1,5 +1,9 @@
+const GET_NUMBER = 0;
+const SERVE = 1;
+
 struct BAKERY
 {
+    int op;
     int num;
     int pid;
     int result;
@@ -9,8 +13,6 @@ program BAKERY_PROG
 {
     version BAKERY_VER
     {
-        struct BAKERY GET_NUMBER(struct BAKERY) = 1;
-        struct BAKERY WAIT_QUEUE(struct BAKERY) = 2;
-        struct BAKERY BAKERY_RES(struct BAKERY) = 3;
-    } = 1;
+        struct BAKERY BAKERY_PROC(struct BAKERY) = 1;
+    } = 1; /* Version number = 1 */
 } = 0x20000001;

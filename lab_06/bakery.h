@@ -13,8 +13,11 @@
 extern "C" {
 #endif
 
+#define GET_NUMBER 0
+#define SERVE 1
 
 struct BAKERY {
+	int op;
 	int num;
 	int pid;
 	int result;
@@ -25,29 +28,15 @@ typedef struct BAKERY BAKERY;
 #define BAKERY_VER 1
 
 #if defined(__STDC__) || defined(__cplusplus)
-#define GET_NUMBER 1
-extern  struct BAKERY * get_number_1(struct BAKERY *, CLIENT *);
-extern  struct BAKERY * get_number_1_svc(struct BAKERY *, struct svc_req *);
-#define WAIT_QUEUE 2
-extern  struct BAKERY * wait_queue_1(struct BAKERY *, CLIENT *);
-extern  struct BAKERY * wait_queue_1_svc(struct BAKERY *, struct svc_req *);
-#define BAKERY_RES 3
-extern  struct BAKERY * bakery_res_1(struct BAKERY *, CLIENT *);
-extern  struct BAKERY * bakery_res_1_svc(struct BAKERY *, struct svc_req *);
+#define BAKERY_PROC 1
+extern  struct BAKERY * bakery_proc_1(struct BAKERY *, CLIENT *);
+extern  struct BAKERY * bakery_proc_1_svc(struct BAKERY *, struct svc_req *);
 extern int bakery_prog_1_freeresult (SVCXPRT *, xdrproc_t, caddr_t);
 
-
-
 #else /* K&R C */
-#define GET_NUMBER 1
-extern  struct BAKERY * get_number_1();
-extern  struct BAKERY * get_number_1_svc();
-#define WAIT_QUEUE 2
-extern  struct BAKERY * wait_queue_1();
-extern  struct BAKERY * wait_queue_1_svc();
-#define BAKERY_RES 3
-extern  struct BAKERY * bakery_res_1();
-extern  struct BAKERY * bakery_res_1_svc();
+#define BAKERY_PROC 1
+extern  struct BAKERY * bakery_proc_1();
+extern  struct BAKERY * bakery_proc_1_svc();
 extern int bakery_prog_1_freeresult ();
 #endif /* K&R C */
 
