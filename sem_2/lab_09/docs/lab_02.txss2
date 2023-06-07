@@ -1,0 +1,48 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "report.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+        ],
+        "CurrentFile": "main.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 21,
+                "EditorGroup": 0,
+                "FileName": "main.tex",
+                "FirstLine": 31,
+                "FoldedLines": "",
+                "Line": 41
+            },
+            {
+                "Col": 125,
+                "EditorGroup": 0,
+                "FileName": "title.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 25
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "settings.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "report.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            }
+        ],
+        "MasterFile": "",
+        "VerticalSplit": false
+    }
+}

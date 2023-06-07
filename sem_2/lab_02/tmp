@@ -1,0 +1,7 @@
+if (events[i].events & (EPOLLRDHUP | EPOLLHUP)) {
+                printf("Connection closed\n");
+                epoll_ctl(epfd, EPOLL_CTL_DEL,
+                          events[i].data.fd, NULL);
+                close(events[i].data.fd);
+                continue;
+            }

@@ -1,0 +1,276 @@
+
+CMDLINE:
+./app
+
+FD:
+0 -> /dev/pts/31/cmdline
+1 -> /dev/pts/31/cmdline
+2 -> /dev/pts/31/cmdline
+
+ENVIRON:
+SHELL=/bin/bash
+SESSION_MANAGER=local/PC:@/tmp/.ICE-unix/2427,unix/PC:/tmp/.ICE-unix/2427
+WINDOWID=94392784
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+NVM_INC=/home/loadeadd/.nvm/versions/node/v16.0.0/include/node
+XDG_MENU_PREFIX=xfce-
+LC_ADDRESS=ru_RU.UTF-8
+JAVA_HOME=/usr/lib/jvm/java-19-openjdk
+LC_NAME=ru_RU.UTF-8
+SSH_AUTH_SOCK=/tmp/ssh-XXXXXX9wSxI0/agent.2564
+DESKTOP_SESSION=xfce
+LC_MONETARY=ru_RU.UTF-8
+SSH_AGENT_PID=2565
+EDITOR=/usr/bin/nano
+GTK_MODULES=canberra-gtk-module:canberra-gtk-module
+XDG_SEAT=seat0
+PWD=/home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5
+LOGNAME=loadeadd
+XDG_SESSION_DESKTOP=xfce
+QT_QPA_PLATFORMTHEME=qt5ct
+XDG_SESSION_TYPE=x11
+XAUTHORITY=/home/loadeadd/.Xauthority
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/loadeadd
+MOTD_SHOWN=pam
+GDM_LANG=ru_RU.utf8
+GTK2_RC_FILES=/home/loadeadd/.gtkrc-2.0
+HOME=/home/loadeadd
+LC_PAPER=ru_RU.UTF-8
+LANG=ru_RU.utf8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=XFCE
+VTE_VERSION=7200
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+NVM_DIR=/home/loadeadd/.nvm
+XDG_SESSION_CLASS=user
+LC_IDENTIFICATION=ru_RU.UTF-8
+TERM=xterm-256color
+USER=loadeadd
+DISPLAY=:0.0
+SHLVL=1
+NVM_CD_FLAGS=
+LC_TELEPHONE=ru_RU.UTF-8
+LC_MEASUREMENT=ru_RU.UTF-8
+XDG_VTNR=7
+XDG_SESSION_ID=2
+XDG_RUNTIME_DIR=/run/user/1000
+DEBUGINFOD_URLS=https://debuginfod.archlinux.org 
+LC_TIME=ru_RU.UTF-8
+QT_AUTO_SCREEN_SCALE_FACTOR=0
+GTK3_MODULES=xapp-gtk3-module:xapp-gtk3-module
+XDG_DATA_DIRS=/home/loadeadd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
+PATH=/home/loadeadd/.nvm/versions/node/v16.0.0/bin:/home/loadeadd/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/loadeadd/.local/share/JetBrains/Toolbox/scripts:/usr/lib/jvm/java-19-openjdk/bin
+GDMSESSION=xfce
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+NVM_BIN=/home/loadeadd/.nvm/versions/node/v16.0.0/bin
+MAIL=/var/spool/mail/loadeadd
+LC_NUMERIC=ru_RU.UTF-8
+_=./app
+
+STAT: 
+(1) pid  '30771'
+(2) comm '(app)'
+(3) state  'S'
+(4) ppid  '28892'
+(5) pgrp  '30771'
+(6) session  '28892'
+(7) tty_nr  '34819'
+(8) tpgid  '30771'
+(9) flags  '1077936128'
+(10) minflt  '62989'
+(11) cminflt  '0'
+(12) majflt  '0'
+(13) cmajflt  '0'
+(14) utime  '11401'
+(15) stime  '5'
+(16) cutime  '0'
+(17) cstime  '0'
+(18) priority  '20'
+(19) nice  '0'
+(20) num_threads  '3'
+(21) itrealvalue  '0'
+(22) starttime  '688234'
+(23) vsize  '366735360'
+(24) rss  '63301'
+(25) rsslim  '18446744073709551615'
+(26) startcode  '94802160836608'
+(27) endcode  '94802160871281'
+(28) startstack  '140725181056528'
+(29) kstkesp  '0'
+(30) kstkeip  '0'
+(31) signal  '0'
+(32) blocked  '0'
+(33) sigignore  '0'
+(34) sigcatch  '0'
+(35) wchan  '0'
+(36) nswap  '0'
+(37) cnswap  '0'
+(38) exit_signal  '17'
+(39) processor  '6'
+(40) rt_priority  '0'
+(41) policy  '0'
+(42) delayacct_blkio_ticks  '0'
+(43) guest_time  '0'
+(44) cguest_time  '0'
+(45) start_data  '94802160897184'
+(46) end_data  '94802160898336'
+(47) start_brk  '94802185043968'
+(48) arg_start  '140725181059474'
+(49) arg_end  '140725181059480'
+(50) env_start  '140725181059480'
+(51) env_end  '140725181063154'
+(52) exit_code  '0
+A_HOME=/usr/lib/jvm/java-19-openjdk
+LC_NAME=ru_RU.UTF-8
+SSH_AUTH_SOCK=/tmp/ssh-XXXXXX9wSxI0/agent.2564
+DESKTOP_SESSION=xfce
+LC_MONETARY=ru_RU.UTF-8
+SSH_AGENT_PID=2565
+EDITOR=/usr/bin/nano
+GTK_MODULES=canberra-gtk-module:canberra-gtk-module
+XDG_SEAT=seat0
+PWD=/home/loadeadd/Рабочий'
+size     стол/study/BMSTU-OS/sem_2/lab_03/aa5
+LOGNAME=loadeadd
+XDG_SESSION_DESKTOP=xfce
+QT_QPA_PLATFORMTHEME=qt5ct
+XDG_SESSION_TYPE=x11
+XAUTHORITY=/home/loadeadd/.Xauthority
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/loadeadd
+MOTD_SHOWN=pam
+GDM_LANG=ru_RU.utf8
+GTK2_RC_FILES=/home/loadeadd/.gtkrc-2.0
+HOME=/home/loadeadd
+LC_PAPER=ru_RU.UTF-8
+LANG=ru_RU.utf8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=XFCE
+VTE_VERSION=7200
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+NVM_DIR=/home/loadeadd/.nvm
+XDG_SESSION_CLASS=user
+LC_IDENTIFICATION=ru_RU.UTF-8
+TERM=xterm-256color
+USER=loadeadd
+DISPLAY=:0.0
+SHLVL=1
+NVM_CD_FLAGS=
+LC_TELEPHONE=ru_RU.UTF-8
+LC_MEASUREMENT=ru_RU.UTF-8
+XDG_VTNR=7
+XDG_SESSION_ID=2
+XDG_RUNTIME_DIR=/run/user/1000
+DEBUGINFOD_URLS=https://debuginfod.archlinux.org  (1)
+resident 
+LC_TIME=ru_RU.UTF-8
+QT_AUTO_SCREEN_SCALE_FACTOR=0
+GTK3_MODULES=xapp-gtk3-module:xapp-gtk3-module
+XDG_DATA_DIRS=/home/loadeadd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
+PATH=/home/loadeadd/.nvm/versions/node/v16.0.0/bin:/home/loadeadd/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/loadeadd/.local/share/JetBrains/Toolbox/scripts:/usr/lib/jvm/java-19-openjdk/bin
+GDMSESSION=xfce
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+NVM_BIN=/home/loadeadd/.nvm/versions/node/v16.0.0/bin
+MAIL=/var/spool/mail/loadeadd
+LC_NUMERIC=ru_RU.UTF-8
+_=./app
+  (2)
+
+STATM: 
+size     89535  (1)
+resident 63301  (2)
+shared   463  (3)
+text     9  (4)
+lib      0  (5)
+data     69070  (6)
+dt       0
+892  (7)
+
+CWD:
+/home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5
+
+EXE:
+/home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5/app
+
+MAPS:
+5638d91ec000-5638d91ee000 r--p 00000000 103:04 7542895                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5/app
+5638d91ee000-5638d91f7000 r-xp 00002000 103:04 7542895                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5/app
+5638d91f7000-5638d91fc000 r--p 0000b000 103:04 7542895                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5/app
+5638d91fc000-5638d91fd000 r--p 0000f000 103:04 7542895                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5/app
+5638d91fd000-5638d91fe000 rw-p 00010000 103:04 7542895                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/aa5/app
+5638da904000-5638da925000 rw-p 00000000 00:00 0                          [heap]
+7f9b34000000-7f9b37fff000 rw-p 00000000 00:00 0 
+7f9b37fff000-7f9b38000000 ---p 00000000 00:00 0 
+7f9b38000000-7f9b3b54e000 rw-p 00000000 00:00 0 
+7f9b3b54e000-7f9b3c000000 ---p 00000000 00:00 0 
+7f9b3c000000-7f9b3c023000 rw-p 00000000 00:00 0 
+7f9b3c023000-7f9b40000000 ---p 00000000 00:00 0 
+7f9b40000000-7f9b43fff000 rw-p 00000000 00:00 0 
+7f9b43fff000-7f9b44000000 ---p 00000000 00:00 0 
+7f9b44000000-7f9b47fff000 rw-p 00000000 00:00 0 
+7f9b47fff000-7f9b48000000 ---p 00000000 00:00 0 
+7f9b48205000-7f9b48206000 ---p 00000000 00:00 0 
+7f9b48206000-7f9b48a06000 rw-p 00000000 00:00 0 
+7f9b48a06000-7f9b48a07000 ---p 00000000 00:00 0 
+7f9b48a07000-7f9b49207000 rw-p 00000000 00:00 0 
+7f9b49207000-7f9b49208000 ---p 00000000 00:00 0 
+7f9b49208000-7f9b49a0c000 rw-p 00000000 00:00 0 
+7f9b49a0c000-7f9b49a2e000 r--p 00000000 103:04 4204251                   /usr/lib/libc.so.6
+7f9b49a2e000-7f9b49b88000 r-xp 00022000 103:04 4204251                   /usr/lib/libc.so.6
+7f9b49b88000-7f9b49be0000 r--p 0017c000 103:04 4204251                   /usr/lib/libc.so.6
+7f9b49be0000-7f9b49be4000 r--p 001d4000 103:04 4204251                   /usr/lib/libc.so.6
+7f9b49be4000-7f9b49be6000 rw-p 001d8000 103:04 4204251                   /usr/lib/libc.so.6
+7f9b49be6000-7f9b49bf3000 rw-p 00000000 00:00 0 
+7f9b49bf3000-7f9b49bf6000 r--p 00000000 103:04 4199007                   /usr/lib/libgcc_s.so.1
+7f9b49bf6000-7f9b49c0d000 r-xp 00003000 103:04 4199007                   /usr/lib/libgcc_s.so.1
+7f9b49c0d000-7f9b49c11000 r--p 0001a000 103:04 4199007                   /usr/lib/libgcc_s.so.1
+7f9b49c11000-7f9b49c12000 r--p 0001d000 103:04 4199007                   /usr/lib/libgcc_s.so.1
+7f9b49c12000-7f9b49c13000 rw-p 0001e000 103:04 4199007                   /usr/lib/libgcc_s.so.1
+7f9b49c13000-7f9b49c21000 r--p 00000000 103:04 4204268                   /usr/lib/libm.so.6
+7f9b49c21000-7f9b49c9b000 r-xp 0000e000 103:04 4204268                   /usr/lib/libm.so.6
+7f9b49c9b000-7f9b49cf9000 r--p 00088000 103:04 4204268                   /usr/lib/libm.so.6
+7f9b49cf9000-7f9b49cfa000 r--p 000e5000 103:04 4204268                   /usr/lib/libm.so.6
+7f9b49cfa000-7f9b49cfb000 rw-p 000e6000 103:04 4204268                   /usr/lib/libm.so.6
+7f9b49cfb000-7f9b49d95000 r--p 00000000 103:04 4211298                   /usr/lib/libstdc++.so.6.0.30
+7f9b49d95000-7f9b49eab000 r-xp 0009a000 103:04 4211298                   /usr/lib/libstdc++.so.6.0.30
+7f9b49eab000-7f9b49f22000 r--p 001b0000 103:04 4211298                   /usr/lib/libstdc++.so.6.0.30
+7f9b49f22000-7f9b49f2f000 r--p 00226000 103:04 4211298                   /usr/lib/libstdc++.so.6.0.30
+7f9b49f2f000-7f9b49f30000 rw-p 00233000 103:04 4211298                   /usr/lib/libstdc++.so.6.0.30
+7f9b49f30000-7f9b49f35000 rw-p 00000000 00:00 0 
+7f9b49f5f000-7f9b49f60000 r--p 00000000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+7f9b49f60000-7f9b49f86000 r-xp 00001000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+7f9b49f86000-7f9b49f90000 r--p 00027000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+7f9b49f90000-7f9b49f92000 r--p 00031000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+7f9b49f92000-7f9b49f94000 rw-p 00033000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+7ffd226b9000-7ffd226da000 rw-p 00000000 00:00 0                          [stack]
+7ffd227dd000-7ffd227e1000 r--p 00000000 00:00 0                          [vvar]
+7ffd227e1000-7ffd227e3000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+
+IO:
+rchar: 6588
+wchar: 118906
+syscr: 12
+syscw: 15
+read_bytes: 0
+write_bytes: 122880
+cancelled_write_bytes: 0
+
+
+COMM:
+app
+
+
+ROOT:
+/
+
+TASK:
+.
+..
+30771
+30773
+30774
+
+PAGEMAP:

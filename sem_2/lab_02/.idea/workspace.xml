@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="lab_02" targetName="lab_02" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ef9b5f0-192d-4097-b7d3-3010ada30e33" name="Changes" comment="lab 1 done">
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab_04/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab_04/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab_04/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_01/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_01/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_01/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_0/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_1/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_1/client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_1/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_1/server.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2/client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2/server.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_3/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_3/client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_3/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_3/server.c" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="3.2" />
+  </component>
+  <component name="ProjectId" id="2LzquSJfD8U0gZ4U8bx18o0RU5k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_02&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+      <recent name="$PROJECT_DIR$/task_0" />
+      <recent name="$PROJECT_DIR$/task_2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/task_1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="lab_02" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_02" TARGET_NAME="lab_02" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab_02" RUN_TARGET_NAME="lab_02">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ef9b5f0-192d-4097-b7d3-3010ada30e33" name="Changes" comment="" />
+      <created>1676884481162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676884481162</updated>
+      <workItem from="1676884482349" duration="841000" />
+      <workItem from="1678053634114" duration="4538000" />
+      <workItem from="1678058221984" duration="11000" />
+      <workItem from="1678085239086" duration="3814000" />
+      <workItem from="1678093357984" duration="6173000" />
+      <workItem from="1678193241795" duration="801000" />
+      <workItem from="1678396206120" duration="1424000" />
+      <workItem from="1678402659115" duration="1362000" />
+      <workItem from="1678478871567" duration="3410000" />
+      <workItem from="1678484219498" duration="20000" />
+      <workItem from="1678698186277" duration="5684000" />
+      <workItem from="1679249607885" duration="26000" />
+      <workItem from="1679250824474" duration="1199000" />
+      <workItem from="1679298212415" duration="143000" />
+      <workItem from="1679298474795" duration="1000" />
+      <workItem from="1679303215553" duration="4902000" />
+      <workItem from="1681676131109" duration="1973000" />
+      <workItem from="1681715246397" duration="1143000" />
+      <workItem from="1681723180475" duration="1798000" />
+      <workItem from="1682318620187" duration="1578000" />
+      <workItem from="1682320768839" duration="905000" />
+      <workItem from="1682327327287" duration="4255000" />
+      <workItem from="1682333096525" duration="1831000" />
+      <workItem from="1682335606531" duration="2309000" />
+      <workItem from="1682338070685" duration="880000" />
+      <workItem from="1683716831010" duration="11000" />
+    </task>
+    <task id="LOCAL-00001" summary="lab 1 done">
+      <created>1678482528975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678482528975</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lab 1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 1 done" />
+  </component>
+</project>

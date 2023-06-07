@@ -1,0 +1,28 @@
+/var/lib/snapd/snap/clion/234/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/var/lib/snapd/snap/clion/234/bin/ninja/linux/x64/ninja -G Ninja -S "/home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_01" -B "/home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_01/cmake-build-debug"
+-- The C compiler identification is GNU 12.2.1
+-- The CXX compiler identification is GNU 12.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+CMake Error at CMakeLists.txt:16 (add_executable):
+  Cannot find source file:
+
+    task_3/server.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+
+
+CMake Error at CMakeLists.txt:16 (add_executable):
+  No SOURCES given to target: task_3
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

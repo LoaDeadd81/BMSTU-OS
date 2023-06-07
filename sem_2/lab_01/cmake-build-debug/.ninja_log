@@ -1,0 +1,5 @@
+# ninja log v5
+0	28	1678087987668327172	CMakeFiles/task_3.dir/task_3/server.c.o	3fe3a63bf41341d1
+0	34	1678088254005301030	CMakeFiles/task_2.dir/task_2/server.c.o	ecf95e5a9aabdefd
+34	51	1678088254018634380	task_2	fad6338b38a493c6
+0	31	1678087987671660508	CMakeFiles/task_3.dir/task_3/client.c.o	303d4ae797fcf2b8

@@ -1,0 +1,25 @@
+
+MAPS:
+1	559302ea3000-559302ea4000 r--p 00000000 103:04 7542785                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/stack/stack.out
+3	559302ea4000-559302ea7000 r-xp 00001000 103:04 7542785                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/stack/stack.out
+1	559302ea7000-559302ea8000 r--p 00004000 103:04 7542785                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/stack/stack.out
+1	559302ea8000-559302ea9000 r--p 00004000 103:04 7542785                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/stack/stack.out
+1	559302ea9000-559302eaa000 rw-p 00005000 103:04 7542785                   /home/loadeadd/Рабочий стол/study/BMSTU-OS/sem_2/lab_03/stack/stack.out
+33	5593044b9000-5593044da000 rw-p 00000000 00:00 0                          [heap]
+3	7fae523e6000-7fae523e9000 rw-p 00000000 00:00 0 
+34	7fae523e9000-7fae5240b000 r--p 00000000 103:04 4204251                   /usr/lib/libc.so.6
+346	7fae5240b000-7fae52565000 r-xp 00022000 103:04 4204251                   /usr/lib/libc.so.6
+88	7fae52565000-7fae525bd000 r--p 0017c000 103:04 4204251                   /usr/lib/libc.so.6
+4	7fae525bd000-7fae525c1000 r--p 001d4000 103:04 4204251                   /usr/lib/libc.so.6
+2	7fae525c1000-7fae525c3000 rw-p 001d8000 103:04 4204251                   /usr/lib/libc.so.6
+15	7fae525c3000-7fae525d2000 rw-p 00000000 00:00 0 
+1	7fae525fc000-7fae525fd000 r--p 00000000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+38	7fae525fd000-7fae52623000 r-xp 00001000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+10	7fae52623000-7fae5262d000 r--p 00027000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+2	7fae5262d000-7fae5262f000 r--p 00031000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+2	7fae5262f000-7fae52631000 rw-p 00033000 103:04 4204237                   /usr/lib/ld-linux-x86-64.so.2
+67	7ffe4e3f1000-7ffe4e434000 rw-p 00000000 00:00 0                          [stack]
+4	7ffe4e521000-7ffe4e525000 r--p 00000000 00:00 0                          [vvar]
+2	7ffe4e525000-7ffe4e527000 r-xp 00000000 00:00 0                          [vdso]
+1	ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+1	ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
